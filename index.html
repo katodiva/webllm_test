@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebLLM Chat</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        #chat-history { border: 1px solid #ccc; height: 400px; overflow-y: scroll; padding: 10px; margin-bottom: 10px; }
+        #input-area { display: flex; gap: 10px; }
+        input { flex-grow: 1; padding: 10px; }
+        button { padding: 10px; }
+        #status { font-weight: bold; color: #555; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>WebLLM Chat</h1>
+    <select id="model-select">
+        <option value="">モデルを選択してください...</option>
+    </select>
+    <div id="status">Ready</div>
+    <div id="chat-history"></div>
+    <div id="input-area">
+        <input type="text" id="user-input" placeholder="メッセージを入力してください..." disabled>
+        <button id="send-btn" disabled>送信</button>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

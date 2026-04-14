@@ -1,0 +1,11 @@
+{
+  "name": "webllm-chat",
+  "version": "1.0.0",
+  "description": "Simple WebLLM Chat Application",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
